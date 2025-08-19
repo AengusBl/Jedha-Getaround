@@ -1,0 +1,10 @@
+[theme]
+
+base = "light"
+primaryColor="#000000ff"
+backgroundColor="#c2e7ffff"
+secondaryBackgroundColor="#ffffffff"
+textColor="#000000"
+showWidgetBorder = true
+showSidebarBorder = true
+font="Arial"

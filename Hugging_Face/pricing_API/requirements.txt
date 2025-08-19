@@ -1,0 +1,7 @@
+uv
+fastapi
+fastapi[standard]
+mlflow
+pandas
+boto3
+scikit-learn == 1.6.1
