@@ -38,7 +38,7 @@ async def index():
 @app.post("/predict", tags=["Predictions"])
 async def predict(data: PredictionFeatures):
     """
-    ### Prediction of the rental price given the car"s specs!
+    ### Prediction of the rental price given the car's specs!
 
     Inputs must be formatted as a list of sub-lists. Each sub-list represents one data point (ie. one car),
     so there may only be one sub-list within the outer list if you only wish to predict one price.
