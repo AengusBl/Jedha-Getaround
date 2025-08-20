@@ -126,7 +126,7 @@ api_url = os.environ["PRICE_API_URL"]
 def call_price_api(inputs):
 	try:
 		response = requests.post(url=f"{api_url}/predict", json=dict(CarActeristics=inputs))
-		st.markdown(f"The estimated daily rental price of the vehicle is €{response.json()["prediction"]:.2f}")
+		st.markdown(f"The estimated daily rental price of the vehicle is €{response.json()["prediction"][0]:.2f}")
 	except Exception as e:
 		print(f"Something went wrong when calling the API. Trying again in 5 seconds.\n{e}")
 		time.sleep(5)

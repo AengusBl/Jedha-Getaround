@@ -74,5 +74,5 @@ async def predict(data: PredictionFeatures):
     loaded_model = mlflow.pyfunc.load_model(model_uri)
     prediction = loaded_model.predict(inputs_df)
 
-    response = {"prediction": prediction.tolist()[0]}
+    response = {"prediction": prediction.tolist()}#[0]}
     return response
